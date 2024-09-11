@@ -1,8 +1,10 @@
 import os
 import pyaes
 
+nameFile = str(input("digite o nome do arquivo: "))
+
 ## abrir o arquivo a ser criptografado
-file_name = "teste.txt"
+file_name = nameFile
 file = open(file_name, "rb")
 file_data = file.read()
 file.close()
